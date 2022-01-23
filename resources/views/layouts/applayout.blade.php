@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{config('app.name')}}</title>
+    <title>Contact</title>
 </head>
-<h1>{{$id}}</h1>
 
-
+<body>
+@yield('content')
 </body>
 </html>
