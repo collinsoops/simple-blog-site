@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\Indexcontroller;
+use App\Http\Controllers\PostsContoller;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,4 @@ Route::get('/user/{name}', [Indexcontroller::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('posts', PostsContoller::class);
