@@ -9,6 +9,9 @@
     <div class="bg-body">{{$posts->body}}</div>
         <div class="align-items-center">Date created :{{$posts->created_at}}</div>
 </li>
+            <li>
+                <h5 class="align-self-sm-center"><a href="/">Back</a> </h5>
+            </li>
     </ul></div>
 
 @endsection
